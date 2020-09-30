@@ -1,0 +1,155 @@
+.touch {
+
+    padding: 4rem;
+
+    height: 100rem;
+    background-color: #EFEFEF;
+
+    &__text {
+        font-size: 1.4rem;
+    }
+
+    
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        height: 100%;
+        list-style: none;
+        background-color: #474D5D;
+        padding: 1rem;
+        border-radius: 1rem;
+        transition: all .2s;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        .fab {
+            color: #fff;
+            font-size: 1.6rem;
+        }
+
+        &:hover {
+            background-color: #707070;
+        }
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .fa-envelope {
+        font-size: 3rem;
+        color: white;
+    }
+
+    .fa-map-marker-alt {
+        font-size: 5rem;
+        
+    }
+    .title {
+        position: relative;
+    
+        span {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: gray;
+            color: white;
+            border-radius: 1rem;
+            letter-spacing: 1px;
+        }
+    
+        .heading-2 {
+            font-size: 4rem;
+            font-weight: bolder;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #555;
+        }
+    
+        &::before {
+            content: "";
+            display: block;
+            width: 3rem;
+            height: 3px;
+            background-color: #555;
+            position: absolute;
+            top: 50%;
+            left: -10%;
+        }
+    
+        &::after {
+            content: "";
+            display: block;
+            width: 3rem;
+            height: 3px;
+            background-color: #555;
+            position: absolute;
+            top: 50%;
+            right: -10%;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        form {
+            width: 40%;
+        }
+
+        .form-title {
+            font-size: 1.6rem;
+        }
+
+        input, textarea {
+            display: block;
+            border: none;
+            margin-bottom: 1rem;
+            padding: 2rem 1rem;
+            width: 100%;
+            border-radius: .3rem;
+
+            &::placeholder {
+                font-size: 1.4rem;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .send {
+            width: 40%;
+            display: block;
+            border: 2px solid #474D5D;
+            padding: 1rem 4rem;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 1.6rem;
+            transition: all .2s;
+
+            &:active, &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                background-color: #474D5D;
+                color: #fff;
+            }
+        }
+    }
+}
+

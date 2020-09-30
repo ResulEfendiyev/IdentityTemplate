@@ -1,0 +1,88 @@
+.parallax {
+  position: relative;
+  height: 30rem;
+  width: 100%;
+
+  @media only screen and (max-width: 62em) {
+    height: 100rem;
+    padding-top: 13rem;
+  }
+
+  .bg-image {
+    background-image: url("../img/parallax1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: -1;
+    -webkit-filter: brightness(70%);
+      filter: brightness(70%);
+    // -webkit-filter: blur(2px);
+    // filter: blur(2px);
+
+    @media only screen and (max-width: 50rem) {
+      background-attachment: initial;
+      
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 50rem) {
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &__item {
+    width: 15rem;
+    height: 15rem;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem 1rem 1rem;
+
+    .fa-users,
+    .fa-trophy,
+    .fa-thumbs-up,
+    .fa-coffee {
+      font-size: 3rem;
+      color: #fff;
+    }
+    @media only screen and (max-width: 62em) {
+      margin-bottom: 2rem;
+      width: 18rem;
+      height: 18rem;
+    }
+
+    @media only screen and (max-width: 50rem) {
+      width: 18rem;
+      height: 18rem;
+    }
+
+  }
+
+  &__count {
+    font-size: 3rem;
+    color: #fff !important;
+    font-weight: bolder;
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: capitalize;
+  }
+}
+

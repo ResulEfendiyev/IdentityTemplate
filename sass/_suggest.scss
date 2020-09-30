@@ -1,0 +1,52 @@
+.suggest {
+
+ margin-top: 7rem;
+  .card-cont {
+    border: 1px solid #ccc;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  .mb-0 {
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-block {
+    font-size: 1.4rem;
+    color: #555;
+    text-decoration: none;
+    border: none;
+    &:focus,
+    &:active {
+      outline: none !important;
+    }
+  }
+
+  
+ 
+
+  .fa-plus {
+    font-size: 1.4rem;
+  }
+
+  @media only screen and (max-width: 62rem) {
+      margin-top: 17rem;
+      #col-6 {
+        margin-bottom: 3rem;
+      }
+
+    .suggest__title-box {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+  }
+}
+
+
+
+
+

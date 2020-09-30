@@ -1,0 +1,269 @@
+.team {
+
+    
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .fa-users {
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    .member {
+        background-color: #CCCCCC;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 40rem;
+        padding: 2rem;
+        text-align: center;
+        transition: all 0.2s;
+        overflow: hidden;
+
+
+        &__img {
+            width: 20rem;
+            height: 20rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+       
+
+        &:hover {
+            transform: translateY(-1rem);
+        }
+
+        &:hover .member__info {
+            transform: translateY(-70%);
+        }
+
+        &:hover .member__img {
+            transform: scale(0);
+
+            
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.3s;
+            // transform: translateY(-70%);
+        }
+
+        &__img {
+            transition: all .2s;
+        }
+
+        &__name h2{
+            font-weight: bolder;
+        }
+
+        &__job {
+            color: #777;
+            font-size: 1.4rem;
+        }
+
+        &__social {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+
+            .face,
+            .tweet,
+            .google {
+                width: 4rem;
+                height: 4rem;
+                background-color: #fff;
+                border-radius: .7rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                transition: all 0.3s;
+                cursor: pointer;
+
+                .fa-facebook-f,
+                .fa-twitter,
+                .fa-google-plus-g {
+                    font-size: 1.6rem;
+                }
+
+                .fa-facebook-f {
+                    color: #4D72BF;
+                }
+
+                .fa-twitter {
+                    color: #2cc5ea;
+                }
+
+                .fa-google-plus-g {
+                    color:  #E5683C;
+                }
+            }
+
+            .face {
+
+                &:hover{
+                    background-color: #4D72BF;
+                }
+
+                &:hover .fa-facebook-f {
+                    color: #fff;
+                }
+            }
+
+            .tweet {
+                &:hover{
+                    background-color: #2CC5EA;
+                }
+
+                &:hover .fa-twitter {
+                    color: #fff;
+                }
+            }
+
+            .google {
+                &:hover{
+                    background-color: #E5683C;
+                }
+
+                &:hover .fa-google-plus-g {
+                    color: #fff;
+                }
+            }
+        }
+
+        &__text {
+            color: #555;
+            font-size: 1.2rem;
+        }
+
+        &__skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 10rem;
+
+            .skill1,
+            .skill2,
+            .skill3 {
+                width: 22rem;
+                position: relative;
+                height: 2rem;
+                background-color:#666666;
+                display: flex;
+                align-items: center;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+            }
+
+            .skill1 span {
+                display: flex;
+                position: absolute;
+                align-items: center;
+                font-weight: bold;
+                top: 0;
+                left: 0;
+                width: 80%;
+                background-color: #474D5D;
+                color: #fff;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                padding: 1rem;
+                height: 2rem;
+            }
+
+            
+
+            .skill2 span {
+                display: flex;
+                position: absolute;
+                align-items: center;
+                font-weight: bold;
+                top: 0;
+                left: 0;
+                width: 70%;
+                background-color: #474D5D;
+                color: #fff;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                padding: 1rem;
+                height: 2rem;
+            }
+
+            .skill3 span {
+                display: flex;
+                position: absolute;
+                align-items: center;
+                font-weight: bold;
+                top: 0;
+                left: 0;
+                width: 90%;
+                background-color: #474D5D;
+                color: #fff;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                padding: 1rem;
+                height: 2rem;
+            }
+        }
+
+        @media only screen and (max-width: 62em) {
+            margin-bottom: 2rem;
+        }
+    }
+    
+}
+
+
+.title {
+    position: relative;
+
+    span {
+        display: inline-block;
+        padding: 1rem 2rem;
+        background-color: gray;
+        color: white;
+        border-radius: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .heading-2 {
+        font-size: 4rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #555;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        width: 3rem;
+        height: 3px;
+        background-color: #555;
+        position: absolute;
+        top: 50%;
+        left: -15%;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 3rem;
+        height: 3px;
+        background-color: #555;
+        position: absolute;
+        top: 50%;
+        right: -15%;
+    }
+}
